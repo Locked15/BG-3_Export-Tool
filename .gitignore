@@ -1,0 +1,150 @@
+# Python bytecode and runtime artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+
+# Python packaging and build output
+.Python
+build/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Editable installs and local package metadata
+pip-wheel-metadata/
+
+# uv and virtual environments
+.venv/
+venv/
+env/
+ENV/
+.env/
+.uv-cache/
+
+# Keep uv.lock tracked for reproducible uv installs.
+# uv.lock
+
+# Python tool caches
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.pytype/
+.pytest_cache/
+.nox/
+.tox/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.hypothesis/
+.cache/
+
+# Type checkers and analysis
+dmypy.json
+dmypy.json.*
+pyrightconfig.json.bak
+
+# Test and benchmark output
+junit*.xml
+test-results/
+reports/
+.benchmarks/
+
+# Documentation builds
+site/
+docs/_build/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Profiling and diagnostics
+*.prof
+*.profile
+*.pstats
+*.log
+logs/
+
+# Local application configuration and secrets
+.env
+.env.*
+!.env.example
+!.env.sample
+*.local
+*.local.*
+/config.json
+/config.local.json
+
+# IDEs and editors
+.idea/
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.example.json
+*.swp
+*.swo
+*~
+*.bak
+*.tmp
+*.temp
+*.orig
+
+# In-place and resource-fork backups
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+*.stackdump
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+.Spotlight-V100/
+.Trashes/
+.fseventsd/
+.TemporaryItems/
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Linux and freedesktop trash
+*~
+.directory
+.Trash-*/
+.nfs*
+
+# Archives and binary bundles generated locally
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+
+# Project generated output
+output/
+exports/
+artifacts/

@@ -1,0 +1,22 @@
+[project]
+name = "bg3-mo2-exporter"
+version = "2.0.0"
+description = "Export Mod Organizer 2 Baldur's Gate 3 profiles to BG3 Mod Manager order files and native mod folders."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "rich>=13.7.0",
+]
+
+[project.scripts]
+et-export = "et.app:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+package = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/et"]
