@@ -6,10 +6,11 @@ readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "rich>=13.7.0",
+    "typer>=0.21.0",
 ]
 
 [project.scripts]
-et-export = "et.app:main"
+et-export = "et.migration_compatibility_patch:main"
 
 [build-system]
 requires = ["hatchling"]

@@ -12,6 +12,14 @@ to copy every `.pak` found recursively.
 ## Usage
 
 ```powershell
+uv run -m et.app
+uv run -m et.app init-session
+uv run -m et.app init-session --config config.json
+```
+
+Legacy compatibility is still available:
+
+```powershell
 uv run et-export --config config.json
 ```
 
