@@ -148,3 +148,7 @@ $RECYCLE.BIN/
 output/
 exports/
 artifacts/
+
+# Local additional mod imports
+/import/*
+!/import/.gitkeep

@@ -3,6 +3,12 @@
 Exports a Mod Organizer 2 Baldur's Gate 3 profile to a BG3 Mod Manager order
 file and can copy matching `.pak` files into the native BG3 Mods folder.
 
+The exporter can also copy additional `.pak` files from a configured import
+folder after the overwrite/configuration copy step. Add `.pak` files to the
+local `import/` directory or point `additional_mods_import_path` at another
+folder, then configure `additional_mods_import` with filenames, stems, or `"*"`
+to copy every `.pak` found recursively.
+
 ## Usage
 
 ```powershell

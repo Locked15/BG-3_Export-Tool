@@ -2,6 +2,7 @@ from pathlib import Path
 
 from et.domain.errors import ExporterError
 from et.domain.modsettings import parse_modsettings
+from et.infrastructure.additional_imports import copy_additional_mods
 from et.infrastructure.config import load_config
 from et.infrastructure.configurations import copy_configurations
 from et.infrastructure.copying import clean_native_mods_folder, copy_mods_from_matches
@@ -90,5 +91,20 @@ def run_export(config_path: Path) -> None:
         )
     else:
         logger.info("Configuration copy skipped.")
+
+    additional_imports = config.get("additional_mods_import", [])
+    if additional_imports:
+        if prompt_yes_no(
+            "Would you like to import additional mods from the configured import folder?"
+        ):
+            copy_additional_mods(
+                Path(config["additional_mods_import_path"]).expanduser(),
+                Path(config["bg3_native_mods_path"]).expanduser(),
+                additional_imports,
+            )
+        else:
+            logger.info("Additional mod import skipped.")
+    else:
+        logger.info("No additional mod imports configured.")
 
     logger.info("Export and import operations completed successfully.")

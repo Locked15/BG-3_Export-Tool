@@ -40,4 +40,24 @@ def load_config(config_path: Path) -> Config:
     if "exclusions" not in config or not isinstance(config.get("exclusions"), list):
         config["exclusions"] = ["GustavDev"]
 
+    additional_imports = config.get("additional_mods_import", [])
+    if not isinstance(additional_imports, list) or not all(
+        isinstance(entry, str) for entry in additional_imports
+    ):
+        raise ExporterError(
+            "Configuration key 'additional_mods_import' must be a list of strings."
+        )
+    config["additional_mods_import"] = additional_imports
+
+    additional_import_path = config.get("additional_mods_import_path", "import")
+    if not isinstance(additional_import_path, str):
+        raise ExporterError(
+            "Configuration key 'additional_mods_import_path' must be a string."
+        )
+
+    source_path = Path(additional_import_path).expanduser()
+    if not source_path.is_absolute():
+        source_path = config_path.parent / source_path
+    config["additional_mods_import_path"] = str(source_path)
+
     return config
