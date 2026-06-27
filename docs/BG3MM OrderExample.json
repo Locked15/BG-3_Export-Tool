@@ -1,28 +1,28 @@
 {
     "Order": [
-      {
-        "UUID": "755a8a72-407f-4f0d-9a33-274ac0f0b53d",
-        "Name": "Mod Configuration Menu"
-      },
-      {
-        "UUID": "472f5394-3d6a-4814-8e62-7022ae2acf4d",
-        "Name": "Mod Configuration Menu [RUS]"
-      },
-      {
-        "UUID": "fb5f528d-4d48-4bf2-a668-2274d3cfba96",
-        "Name": "5eSpells"
-      },
-      {
-        "UUID": "0cac97db-683b-45f9-bca0-3e5340f06a47",
-        "Name": "5eSpells_RU"
-      },
-      {
-        "UUID": "a2c4b0fc-e745-41df-81b7-fa53950d86a0",
-        "Name": "Expansion"
-      },
-      {
-        "UUID": "6ef28ab0-a318-467a-bf4f-f8ffbda5740a",
-        "Name": "Expansion_RU"
-      }
+        {
+            "UUID": "755a8a72-407f-4f0d-9a33-274ac0f0b53d",
+            "Name": "Mod Configuration Menu"
+        },
+        {
+            "UUID": "472f5394-3d6a-4814-8e62-7022ae2acf4d",
+            "Name": "Mod Configuration Menu [RUS]"
+        },
+        {
+            "UUID": "fb5f528d-4d48-4bf2-a668-2274d3cfba96",
+            "Name": "5eSpells"
+        },
+        {
+            "UUID": "0cac97db-683b-45f9-bca0-3e5340f06a47",
+            "Name": "5eSpells_RU"
+        },
+        {
+            "UUID": "a2c4b0fc-e745-41df-81b7-fa53950d86a0",
+            "Name": "Expansion"
+        },
+        {
+            "UUID": "6ef28ab0-a318-467a-bf4f-f8ffbda5740a",
+            "Name": "Expansion_RU"
+        }
     ]
-  }
+}

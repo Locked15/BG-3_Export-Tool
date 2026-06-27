@@ -1,14 +1,17 @@
 {
-  "mo2_profiles_path": "I:/Windows/Games/Modding/Baldurs Gate 3/MO2/Packages/profiles",
-  "mo2_mods_path": "I:/Windows/Games/Modding/Baldurs Gate 3/MO2/Packages/mods",
-  "bg3mm_orders_path": "I:/Windows/Games/Modding/Baldurs Gate 3/BG3MM/Orders",
-  "bg3_native_mods_path": "C:/Users/Template Dev/AppData/Local/Larian Studios/Baldur's Gate 3/Native",
-  "configurations_source_path": "D:/SteamLibrary/steamapps/common/Baldurs Gate 3/ModManager/MO2/Packages/overwrite/SE_CONFIG",
-  "configurations_destination_path": "C:/Users/Template Dev/AppData/Local/Larian Studios/Baldur's Gate 3/Script Extender",
-  "additional_mods_import_path": "import",
-  "additional_mods_import": [
-    "*"
-  ],
-  "default_profile": "Gen C) Third WT"
+    "mo2_profiles_path": "I:/Windows/Games/Modding/Baldurs Gate 3/MO2/Packages/profiles",
+    "mo2_mods_path": "I:/Windows/Games/Modding/Baldurs Gate 3/MO2/Packages/mods",
+    
+    "bg3mm_orders_path": "I:/Windows/Games/Modding/Baldurs Gate 3/BG3MM/Orders",
+    "bg3_native_mods_path": "C:/Users/Template Dev/AppData/Local/Larian Studios/Baldur's Gate 3/Native",
+    
+    "configurations_source_path": "D:/SteamLibrary/steamapps/common/Baldurs Gate 3/ModManager/MO2/Packages/overwrite/SE_CONFIG",
+    "configurations_destination_path": "C:/Users/Template Dev/AppData/Local/Larian Studios/Baldur's Gate 3/Script Extender",
+    
+    "additional_mods_import_path": "import",
+    "additional_mods_import": [
+        "*"
+    ],
+    
+    "default_profile": "Gen C) Third WT"
 }
-
