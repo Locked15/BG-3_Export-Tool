@@ -15,13 +15,28 @@ def _collect_files(source_root: Path, destination_root: Path) -> list[tuple[Path
 
 def _resolve_conflicts(files_to_copy: list[tuple[Path, Path]]) -> list[tuple[Path, Path]]:
     resolved_files: list[tuple[Path, Path]] = []
+    conflict_mode: str | None = None
 
     for source_path, destination_path in files_to_copy:
         if destination_path.exists():
-            selected = prompt_choice(
-                f"Configuration file already exists at '{destination_path}'. Choose an option:",
-                ["Overwrite", "Ignore"],
-            )
+            selected = conflict_mode
+            if selected is None:
+                selected = prompt_choice(
+                    f"Configuration file already exists at '{destination_path}'. Choose an option:",
+                    [
+                        "Overwrite",
+                        "Ignore",
+                        "Overwrite always",
+                        "Ignore always",
+                    ],
+                )
+                if selected == "Overwrite always":
+                    conflict_mode = "Overwrite"
+                    selected = "Overwrite"
+                elif selected == "Ignore always":
+                    conflict_mode = "Ignore"
+                    selected = "Ignore"
+
             if selected == "Ignore":
                 continue
 
